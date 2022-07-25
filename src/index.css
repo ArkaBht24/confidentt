@@ -1,13 +1,412 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Muli", sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.navbar {
+    background-color: #fff !important;
+    
+}
+
+.navbar-brand{
+    font-size:1.9rem !important;
+    color: #565367 !important;
+}
+
+.navbar a{
+    font-size:1.3rem;
+    text-transform: capitalize;
+}
+
+.navbar a:hover{
+    color:#657a89 !important;
+    
+}
+.active {
+    font-weight:bold !important;
+    border-bottom:1px solid #3b3868 !important;
+}
+#home
+{
+
+    color: #6b6781;
+    padding-top: 30px;
+    font-size: 48px;
+    font-weight: 700;
+}
+#header {
+    width: 100%;
+    height: 80vh;
+    margin-top: 70px;
+}
+
+#header .brand-name{
+    color: #3498db;
+}
+
+#header h2
+{
+    margin: 0 0 8px 0;
+    font-size: 48px;
+    font-weight: 700;
+    color:  black;
+}
+
+#header h3{
+    color: #484848;
+    font-size: 24px;
+}
+
+#header .btn-get-started{
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display:inline-block;
+    padding: 8px 30px;
+    border-radius: 50px;
+    transition:0.5s;
+    color: #3498db;
+    border:2px solid #3498db;
+    text-decoration: none;
+    
+}
+.mt-3
+{
+    padding-bottom: 8px;
+}
+#header .btn-get-started:hover{
+    background: #3498db;
+    color: #fff;
+    
+}
+
+.header-img{
+    text-align: right;
+}
+
+#header .animated {
+    animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
+@-webkit-keyframes up-down {
+    0%{
+        transform: translateY(8px);
+    }
+    100%{
+        transform: translateY(-8px);
+    }
+}
+
+@keyframes up-down {
+    0%{
+        transform: translateY(8px);
+    }
+    100%{
+        transform: translateY(-8px);
+    }
+}
+
+#aboutbody
+{
+    color: #484848;
+}
+
+@media screen and (min-width: 601px) {
+    #aboutbody {
+      font-size: 19px;
+    }
+  }
+  
+  /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+  @media screen and (max-width: 600px) {
+    #aboutbody {
+      font-size: 12px;
+    }
+  }
+
+  #header .training{
+    color: #238653;
+    
+}
+
+#header .apply{
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display:inline-block;
+    padding: 8px 30px;
+    border-radius: 50px;
+    transition:0.5s;
+    color: #0ac720;
+    border:2px solid #0ac720;
+    text-decoration: none;
+}
+
+#header .apply:hover{
+    background: #0ac720;
+    color: #fff;
+    
+}
+
+#header .abt{
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display:inline-block;
+    padding: 8px 30px;
+    border-radius: 50px;
+    transition:0.5s;
+    color: #3498db;
+    border:2px solid #3498db;
+    text-decoration: none;
+    margin-left: 5px;
+}
+#header .recru-btn{
+    font-weight: 500 !important;
+    font-size: 16px !important;
+    letter-spacing: 1px !important;
+    display:inline-block !important;
+    padding: 8px 30px !important;
+    border-radius: 50px !important;
+    transition:0.5s !important;
+    color: black !important;
+    border:2px solid black !important;
+    text-decoration: none !important;
+    margin-left: 5px !important;
+}
+#header .abt:hover{
+    background: #3498db;
+    color: #fff;
+    
+}
+#header .recru-btn:hover{
+    background: black !important;
+    color: #fff !important;
+    
+}
+
+
+  /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+  @media screen and (max-width: 600px) {
+    .desc {
+      font-size: 10px;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .homeIntro {
+      font-size: 35px !important;
+    }
+  }
+
+
+  .gy-4{
+    margin-bottom: 20px;
+  }
+
+  .card{
+    border:0px solid#fff !important;
+  }
+
+   .recruiters{
+    font-weight: bolder !important;
+    font-size: 60px;
+    
+  }
+
+/*.reach{
+  color: #2d2c34;
+  padding-top: 30px;
+  font-size: 42px;
+  font-weight: 700;
+}*/
+
+#servicebody
+{
+    color: #484848;
+}
+
+@media screen and (min-width: 601px) {
+    #servicebody {
+      font-size: 18px;
+    }
+  }
+  
+  /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+  @media screen and (max-width: 600px) {
+    #servicebody {
+      font-size: 12px;
+    }
+  }
+
+a.fblink{
+  text-decoration: none;
+}
+
+.fbtext:hover{
+  font-weight: bold;
+}
+
+
+
+.classroom{
+  font-weight: bolder !important;
+  font-size: 45px;
+  
+}
+
+@media screen and (min-width: 601px) {
+  .ganimation:hover{
+    height:350px;
+    width:560px;
+    transition: 0.5s !important;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .ganimation{
+    transition: 0.5s !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .ganimation:hover{
+    transition: 1s !important;
+    height:200px;
+    width:300px;
+    
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .ganimation{
+    transition: 0.5s !important;
+    height:auto;
+    width: auto;
+  }
+}
+
+@media screen and (min-width: 601px) {
+  .aganimation:hover{
+    height:540px;
+    width:560px;
+    transition: 0.5s !important;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .aganimation{
+    transition: 0.5s !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .aganimation:hover{
+    transition: 1s !important;
+    
+    
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .aganimation{
+    transition: 0.5s !important;
+    height:auto;
+    width: auto;
+  }
+}
+
+.ft{
+ border-top:2px solid rgb(182, 188, 194);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  
+} 
+
+.ft-space{
+  padding-right: 5px;
+}
+
+@media screen and (min-width: 601px) {
+  .footer-text {
+    font-size: 14px;
+  }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+  .footer-text {
+    font-size: 10px;
+  }
+}
+
+
+
+
+@media screen and (min-width: 601px) {
+  .brand-sub {
+    font-size: 18px;
+    font-weight: bold;
+  }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+  .brand-sub {
+    font-size: 12px;
+  }
+}
+
+
+@media screen and (min-width: 601px) {
+  .brand-footer {
+    font-size: 36px;
+    
+  }
+}
+
+
+@media screen and (min-width: 601px) {
+  .footer-text-right {
+    padding-top: 10px;
+    font-size: 16px;
+  }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+  .footer-text-right {
+    font-size: 12px;
+    padding-top: 15px;
+  }
+}
+
+.email-footer{
+  text-decoration: none;
+  color:#484848;
+  padding-right:2px;
+}
+
+.email-footer:hover{
+  text-decoration: none;
+  color:black;
+  
+}
+.butt
+{
+  font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display:inline-block;
+    padding: 8px 30px;
+    border-radius: 50px;
+    transition:0.5s;
+    color: #3498db;
+    border:2px solid #3498db;
+    text-decoration: none;
+}
+
+.butt:hover{
+  background: #3498db;
+  color: #fff;
+  
+}
+
+.footer-home{
+  border-bottom:0px !important;
 }
